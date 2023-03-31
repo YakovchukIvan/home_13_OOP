@@ -37,7 +37,7 @@ body {
 
 .list__car-item {
     border: 1px solid rgb(0, 255, 170);
-    
+
 }
 
 .list__auto {
@@ -45,20 +45,22 @@ body {
     margin: 0;
     padding: 0;
 }
-.list__auto > li {
+
+.list__auto>li {
     padding: 8px 16px;
 }
 
-.item__img_1 > img {
-    width: 300px;
-    height: 200px;
-}
-.item__img_2 > img{
+.item__img_1>img {
     width: 300px;
     height: 200px;
 }
 
-.item__brand {}
+.item__img_2>img {
+    width: 300px;
+    height: 200px;
+}
+
+.item__brend {}
 
 .item__model {}
 
@@ -66,15 +68,11 @@ body {
 
 .item__mileage {}
 
-.btn__mileage {
-    
-}
+.btn__mileage {}
 
 .item__price {}
 
-.btn__price {
-
-}
+.btn__price {}
 
 .item__status {
     display: flex;
@@ -103,6 +101,7 @@ body {
     width: 12px;
     height: 12px;
     border-radius: 50%;
+    margin-left: 8px;
 }
 
 .span__status2 {
@@ -111,4 +110,5 @@ body {
     width: 12px;
     height: 12px;
     border-radius: 50%;
+    margin-left: 8px;
 }
