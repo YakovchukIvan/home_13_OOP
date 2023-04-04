@@ -23,7 +23,7 @@ body {
 }
 
 h1 {
-    background: #ddd
+    background: #ddd;
 }
 
 .wrapper {
@@ -35,8 +35,8 @@ h1 {
     /* border: 1px solid rgb(157, 255, 0); */
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    gap: 20px;
+    justify-content: center;
+    gap: 40px;
 }
 
 .list__car-item {
@@ -82,14 +82,18 @@ h1 {
 .item__mileage {
 }
 
-.mileage__block {
+.block__content {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 12px;
+    gap: 14px;
 }
 
-.btn__mileage {
+.block__status {
+    margin-bottom: 14px;
+}
+
+.btn {
     width: max-content;
     border-radius: 6px;
     border: 1px solid black;
@@ -98,7 +102,7 @@ h1 {
     padding: 4px 8px;
 }
 
-.btn__mileage:active {
+.btn:active {
     transform: scale(0.98);
     opacity: 0.8;
 }
