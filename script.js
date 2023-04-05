@@ -55,7 +55,6 @@ const price__input2 = document.querySelector(".price__input2")
 const btn__price2 = document.querySelector(".btn__price2")
 const list__status2 = document.querySelector(".list__status2")
 const btn__status2 = document.querySelector(".btn__status2")
-mileage__input2
 
 // Третє авто
 const item__brend3 = document.querySelector(".item__brend3")
@@ -189,6 +188,37 @@ function showAutoThree() {
     item__year3.textContent = "Рік випуску : " + BMW.age;
     item__mileage3.textContent = "Пробіг : " + BMW.mileage + " км";
     item__price3.textContent = "Ціна за добу : " + BMW.price + " $";
+
+        list__auto3.addEventListener("click", () => {
+        if (mileage__input3.value) {
+            BMW.mileage += parseInt(mileage__input3.value);
+            console.log(typeof BMW.mileage);// для перевірки
+            console.log(BMW.mileage);// для перевірки
+            showAutoThree() // запускаємо ще раз функцію, щоб перезаписати знову значення
+            mileage__input3.value = "" // чистимо в кінці input
+        }
+        if (price__input3.value) {
+            BMW.price += parseInt(price__input3.value);
+            console.log(typeof BMW.price);// для перевірки
+            console.log(BMW.price);// для перевірки
+            showAutoThree() // запускаємо ще раз функцію, щоб перезаписати знову значення
+            price__input3.value = "" // чистимо в кінці input
+        }
+    })
+    list__status3.addEventListener("click", () => {
+        if(btn__status3) {
+        // console.log(count); // для перевірки
+        if (count % 2 == 1) {
+            count++;
+            span__status3.style.background = "greenyellow";
+            item__status3.textContent = "Вільна "
+        } else {
+            count++;
+            span__status3.style.background = "red";
+            item__status3.textContent = "Зайнята "
+        }
+        }
+    })
 }
 showAutoThree(BMW);
 
